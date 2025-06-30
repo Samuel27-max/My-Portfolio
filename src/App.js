@@ -4,7 +4,7 @@ import { Mail, Phone, Linkedin, Github, Briefcase, Code, GraduationCap, Award, H
 // Data extracted from the resume
 const resumeData = {
   name: "SEGARI SAMUEL RICKSON",
-  email: "segarisamuelrickson@gmail.com",
+  email: "samuelrickson@gmail.com",
   phone: "+91 8096721945",
   linkedin: "https://www.linkedin.com/in/samuel-rickson-084874278", // Placeholder
   github: "https://github.com/Samuel27-max", // Placeholder
