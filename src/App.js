@@ -8,7 +8,7 @@ const resumeData = {
   phone: "+91 8096721945",
   linkedin: "https://www.linkedin.com/in/samuel-rickson-084874278",
   github: "https://github.com/Samuel27-max",
-  summary: "Aspiring Java Developer and MCA student with a solid foundation in Core Java, OOP principles, and hands-on project experience using Spring Boot. Eager to apply academic training and backend development skills to real-world engineering challenges as a Software Intern.",
+  summary: "Aspiring Java Developer and MCA student with a solid foundation in Core Java, OOP principles, and hands-on project experience using Spring Boot. Eager to apply academic training and backend development skills to real-world engineering challenges as a Software Developer.",
   technicalSkills: {
     languagesAndCore: ["Java (Advanced)", "SQL", "Python", "JavaScript", "Data Structures & Algorithms (DSA)", "OOP/SOLID"],
     frameworksAndBackend: ["Spring Boot", "Spring MVC", "JDBC", "Servlets", "Hibernate/JPA", "RESTful APIs"],
