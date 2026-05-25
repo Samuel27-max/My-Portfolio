@@ -1,95 +1,105 @@
 import React from 'react';
 import { Mail, Phone, Linkedin, Github, Briefcase, Code, GraduationCap, Award, Heart, Calendar, ExternalLink } from 'lucide-react';
 
-// Data extracted from the resume
+// Data strictly synchronized with your polished single-page resume
 const resumeData = {
   name: "SEGARI SAMUEL RICKSON",
   email: "samuelrickson@gmail.com",
   phone: "+91 8096721945",
-  linkedin: "https://www.linkedin.com/in/samuel-rickson-084874278", // Placeholder
-  github: "https://github.com/Samuel27-max", // Placeholder
-  summary: "Java developer with strong knowledge of core Java, Spring Boot, JDBC, and Servlets. Committed to continuous learning and eager to contribute to real-world development projects.",
+  linkedin: "https://www.linkedin.com/in/samuel-rickson-084874278",
+  github: "https://github.com/Samuel27-max",
+  summary: "Aspiring Java Developer and MCA student with a solid foundation in Core Java, OOP principles, and hands-on project experience using Spring Boot. Eager to apply academic training and backend development skills to real-world engineering challenges as a Software Intern.",
   technicalSkills: {
-    languages: ["Java", "C", "Python", "JavaScript", "HTML", "CSS", "SQL"],
-    javaTech: ["OOP", "Collections", "JDBC", "Servlets", "JSP", "Swing", "Serialization"],
-    toolsFrameworks: ["Spring", "SpringBoot", "React.JS", "Maven", "Git"],
-    otherTech: ["Node.js", "REST APIs", "Testing", "Deployment"]
+    languagesAndCore: ["Java (Advanced)", "SQL", "Python", "JavaScript", "Data Structures & Algorithms (DSA)", "OOP/SOLID"],
+    frameworksAndBackend: ["Spring Boot", "Spring MVC", "JDBC", "Servlets", "Hibernate/JPA", "RESTful APIs"],
+    toolsAndDatabases: ["Git", "GitHub", "Maven", "Postman", "MySQL", "IntelliJ IDEA", "VS Code"],
+    frontendAndGui: ["Java Swing", "ReactJS", "Tailwind CSS", "Bootstrap"]
   },
   experience: [
     {
-      title: "Java Developer Intern",
+      title: "Java Backend Developer Intern",
       company: "Vault of Codes",
       location: "Remote",
-      duration: "June 2025 - July 2025",
+      duration: "Jun 2025 – Jul 2025",
       description: [
-        "Developed a Java Swing-based Library Management System with modular architecture.",
-        "Built a command-line To-Do List app using core Java and file storage.",
-        "Strengthened core Java concepts including OOP and Collections."
+        "Engineered a GUI Library Management System using Java Swing and JDBC, accelerating data retrieval speed by 50%.",
+        "Refactored legacy monolithic infrastructure using MVC and DAO design patterns to enforce modular code separation.",
+        "Ranked in the top 5% of internal Java backend technical assessments for code quality and algorithmic efficiency."
       ]
     },
     {
       title: "Software Developer Intern",
       company: "Agnirva (ISRO)",
       location: "Remote",
-      duration: "May 2025 - July 2025",
+      duration: "May 2025 – Jul 2025",
       description: [
-        "Worked on backend and API integration using Node.js and JavaScript.",
-        "Built capstone projects using OpenWeather and NASA APIs."
-      ]
-    },
-    {
-      title: "Space Intern",
-      company: "Agnirva (ISRO)",
-      location: "Remote",
-      duration: "April 2025 - May 2025",
-      description: [
-        "Explored space law, tourism, exploration, and interplanetary topics.",
-        "Completed space-related certification and research modules."
+        "Integrated external OpenWeather and NASA APIs into JavaScript data handlers to display real-time metrics.",
+        "Optimized asynchronous network communications using async/await, dropping endpoint latency by 30%."
       ]
     }
   ],
   projects: [
     {
-      name: "Java Library Management System",
-      duration: "June 2025 - July 2025",
-      description: "GUI-based app using Java Swing with CRUD operations and layered architecture. Data stored using Java Serialization.",
-      link: "https://github.com/Samuel27-max/LibraryManagementSystemProject-Repo.git" // Placeholder
+      name: "EchoPost: AI Driven Post Quantum Secure Messenger & Behavioural Auditor",
+      techStack: "Java, Spring Boot, Spring Security, CRYSTALS-Kyber",
+      description: "Architected a secure messaging environment integrating key Post-Quantum Cryptography (PQC) validation mechanics. Built an AI behavioral auditor engine assessing biometric keystroke dynamics for continuous multi-user verification.",
+      link: "https://github.com/Samuel27-max"
     },
     {
-      name: "Web-Based Task Manager Tool",
-      duration: "May 2025 - July 2025",
-      description: "Developed task manager using HTML, Tailwind CSS, JavaScript. Integrated Open Weather API for forecast-based task suggestions.",
-      link: "https://github.com/Samuel27-max/Task-Mgmt-Tool.git" // Placeholder
+      name: "Enterprise Library Management System",
+      techStack: "Java, JDBC, MySQL, Swing API",
+      description: "Designed a standalone desktop workflow enforcing reliable CRUD operations and secure database data persistence.",
+      link: "https://github.com/Samuel27-max"
     },
     {
-      name: "Java CLI To-Do List App",
-      duration: "April 2025 - May 2025",
-      description: "Console-based app using core Java and file I/O to manage daily tasks via serialization.",
-      link: "https://github.com/Samuel27-max/MiniProjectRepo.git" // Placeholder
+      name: "ChefAI India: Personalized Recipe System",
+      techStack: "Generative AI & LLMs",
+      description: "Developing an intelligent recipe system co-authored to parse user culinary preferences and dietary limits dynamically. (Academic Research Initiative — Paper Under Review)",
+      link: "https://github.com/Samuel27-max"
     }
   ],
   education: [
     {
-      degree: "MCA Master of Computer Applications",
-      institution: "Aurora's PG College, Hyderabad (Affiliated to Osmania University)",
-      duration: "2024 - 2026",
-      status: "Pursuing"
+      degree: "Master of Computer Applications (MCA)",
+      institution: "Aurora’s PG College (Affiliated with Osmania University)",
+      duration: "2024 – 2026",
+      status: "Pursuing",
+      location: "Hyderabad, India"
     },
     {
-      degree: "B.Sc Mathematics, Physics, Chemistry",
-      institution: "Nizam College, Hyderabad",
-      duration: "2021 - 2024",
-      details: "Percentage: 97%"
+      degree: "Bachelor of Science (B.Sc. – MPC)",
+      institution: "Nizam College (Osmania University)",
+      duration: "Graduated: 2024",
+      details: "Aggregate: 97%",
+      location: "Hyderabad, India"
     }
   ],
-  certificationsAwards: [
-    "Oracle Certified AI Foundations Associate (2024)",
-    "Gold Medalist B.Sc Chemistry"
+  honorsLeadership: [
+    {
+      role: "President",
+      organization: "Computer Society of India (CSI) Student Branch (2025–26)",
+      details: "Spearheading core campus tech initiatives, 24-hour hackathons, and technical bootcamps."
+    },
+    {
+      role: "CSI Hyderabad Prize Winner",
+      organization: "Technical Presentation",
+      details: "Clinched top honors for presenting 'Role of Young Engineers in an AI Driven World'."
+    },
+    {
+      role: "Hackathon Participant",
+      organization: "Rapid Technical Prototyping",
+      details: "Competed in rapid technical hackathons, collaborating under tight deadlines to prototype scalable software architectures."
+    },
+    {
+      role: "University Gold Medalist",
+      organization: "Nizam College",
+      details: "Conferred the University Gold Medal in B.Sc. Chemistry for overall top ranking."
+    }
   ],
-  volunteerExperience: [
-    "Organized blood donation drives and taught in NSS village programs.",
-    "Attended CSI (Computer Society of India) technical seminars."
-  ]
+  certificationsCoursework: {
+    certifications: ["Oracle AI and Machine Learning Foundations Associate (2024)"],
+    coursework: ["Data Structures and Algorithms (DSA)", "DBMS", "Operating Systems", "Computer Networks", "Software Engineering"]
+  }
 };
 
 // Reusable Section Component
@@ -106,23 +116,23 @@ const Section = ({ id, title, children }) => (
 const Hero = ({ data }) => (
   <header className="relative bg-gradient-to-r from-indigo-600 to-purple-700 text-white py-20 px-4 sm:px-6 lg:px-8 rounded-xl shadow-lg mb-8 text-center">
     <div className="container mx-auto">
-      <h1 className="text-5xl sm:text-6xl font-extrabold mb-4 animate-fade-in-down">{data.name}</h1>
-      <p className="text-xl sm:text-2xl mb-8 opacity-90 animate-fade-in-up">{data.summary}</p>
-      <div className="flex flex-wrap justify-center gap-6 text-lg">
+      <h1 className="text-4xl sm:text-5xl font-extrabold mb-4">{data.name}</h1>
+      <p className="text-lg sm:text-xl mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">{data.summary}</p>
+      <div className="flex flex-wrap justify-center gap-6 text-base sm:text-lg">
         <a href={`mailto:${data.email}`} className="flex items-center space-x-2 hover:text-indigo-200 transition-colors duration-300">
-          <Mail size={20} /> <span>{data.email}</span>
+          <Mail size={18} /> <span>{data.email}</span>
         </a>
         <a href={`tel:${data.phone}`} className="flex items-center space-x-2 hover:text-indigo-200 transition-colors duration-300">
-          <Phone size={20} /> <span>{data.phone}</span>
+          <Phone size={18} /> <span>{data.phone}</span>
         </a>
         {data.linkedin && (
           <a href={data.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 hover:text-indigo-200 transition-colors duration-300">
-            <Linkedin size={20} /> <span>LinkedIn</span>
+            <Linkedin size={18} /> <span>LinkedIn</span>
           </a>
         )}
         {data.github && (
           <a href={data.github} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 hover:text-indigo-200 transition-colors duration-300">
-            <Github size={20} /> <span>GitHub</span>
+            <Github size={18} /> <span>GitHub</span>
           </a>
         )}
       </div>
@@ -133,14 +143,14 @@ const Hero = ({ data }) => (
 // Skills Section Component
 const Skills = ({ data }) => (
   <Section id="skills" title="Technical Skills">
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {Object.entries(data).map(([category, skills], index) => (
         <div key={index} className="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-          <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-4 flex items-center">
-            <Code size={20} className="mr-2 text-indigo-500" />
+          <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-4 flex items-center border-b border-gray-200 dark:border-gray-600 pb-2">
+            <Code size={18} className="mr-2 text-indigo-500" />
             {category.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
           </h3>
-          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+          <ul className="text-gray-700 dark:text-gray-300 space-y-2 text-sm">
             {skills.map((skill, i) => (
               <li key={i} className="flex items-center">
                 <span className="text-indigo-500 mr-2">&bull;</span> {skill}
@@ -158,16 +168,16 @@ const Experience = ({ data }) => (
   <Section id="experience" title="Experience">
     <div className="space-y-8">
       {data.map((job, index) => (
-        <div key={index} className="relative pl-8 border-l-2 border-indigo-500 pb-8 last:pb-0">
+        <div key={index} className="relative pl-8 border-l-2 border-indigo-500 pb-2 last:pb-0">
           <div className="absolute -left-3 top-0 bg-indigo-500 rounded-full p-1">
-            <Briefcase size={16} className="text-white" />
+            <Briefcase size={14} className="text-white" />
           </div>
           <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{job.title}</h3>
-          <p className="text-indigo-600 dark:text-indigo-400 font-medium">{job.company} - {job.location}</p>
-          <p className="text-gray-600 dark:text-gray-400 text-sm mb-3">{job.duration}</p>
-          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+          <p className="text-indigo-600 dark:text-indigo-400 font-medium">{job.company}</p>
+          <p className="text-gray-500 dark:text-gray-400 text-xs mb-3">{job.duration} | {job.location}</p>
+          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1.5 text-sm">
             {job.description.map((point, i) => (
-              <li key={i}>{point}</li>
+              <li key={i} className="leading-relaxed">{point}</li>
             ))}
           </ul>
         </div>
@@ -178,20 +188,18 @@ const Experience = ({ data }) => (
 
 // Projects Section Component
 const Projects = ({ data }) => (
-  <Section id="projects" title="Projects">
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <Section id="projects" title="Projects & Research">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {data.map((project, index) => (
         <div key={index} className="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
           <div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{project.name}</h3>
-            <p className="text-gray-600 dark:text-gray-400 text-sm mb-3 flex items-center">
-              <Calendar size={16} className="mr-2 text-indigo-500" /> {project.duration}
-            </p>
-            <p className="text-gray-700 dark:text-gray-300 mb-4">{project.description}</p>
+            <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1 leading-tight">{project.name}</h3>
+            <p className="text-indigo-600 dark:text-indigo-400 text-xs font-mono mb-3">{project.techStack}</p>
+            <p className="text-gray-700 dark:text-gray-300 text-sm mb-4 leading-relaxed">{project.description}</p>
           </div>
           {project.link && (
-            <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-200 font-medium transition-colors duration-300">
-              View Project <ExternalLink size={16} className="ml-1" />
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-200 text-sm font-medium transition-colors duration-300">
+              View Repository <ExternalLink size={14} className="ml-1" />
             </a>
           )}
         </div>
@@ -205,55 +213,75 @@ const Education = ({ data }) => (
   <Section id="education" title="Education">
     <div className="space-y-8">
       {data.map((edu, index) => (
-        <div key={index} className="relative pl-8 border-l-2 border-indigo-500 pb-8 last:pb-0">
+        <div key={index} className="relative pl-8 border-l-2 border-indigo-500 pb-2 last:pb-0">
           <div className="absolute -left-3 top-0 bg-indigo-500 rounded-full p-1">
-            <GraduationCap size={16} className="text-white" />
+            <GraduationCap size={14} className="text-white" />
           </div>
           <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{edu.degree}</h3>
           <p className="text-indigo-600 dark:text-indigo-400 font-medium">{edu.institution}</p>
-          <p className="text-gray-600 dark:text-gray-400 text-sm mb-2 flex items-center">
-            <Calendar size={16} className="mr-2 text-indigo-500" /> {edu.duration} {edu.status && `(${edu.status})`}
-          </p>
-          {edu.details && <p className="text-gray-700 dark:text-gray-300">{edu.details}</p>}
+          <p className="text-gray-500 dark:text-gray-400 text-xs mb-2">{edu.duration} {edu.status && `(${edu.status})`} | {edu.location}</p>
+          {edu.details && <p className="text-gray-700 dark:text-gray-300 text-sm font-medium bg-indigo-50 dark:bg-indigo-950/40 inline-block px-2 py-0.5 rounded">{edu.details}</p>}
         </div>
       ))}
     </div>
   </Section>
 );
 
-// Certifications & Awards Section Component
-const CertificationsAwards = ({ data }) => (
-  <Section id="certifications-awards" title="Certifications & Awards">
-    <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-3">
+// Honors & Leadership Section Component
+const HonorsLeadership = ({ data }) => (
+  <Section id="honors-leadership" title="Honors & Leadership">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
       {data.map((item, index) => (
-        <li key={index} className="flex items-start">
-          <Award size={20} className="mr-3 text-indigo-500 flex-shrink-0" />
-          <span>{item}</span>
-        </li>
+        <div key={index} className="flex items-start bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+          <Award size={20} className="mr-3 text-indigo-500 flex-shrink-0 mt-0.5" />
+          <div>
+            <h4 className="font-bold text-gray-900 dark:text-white text-sm sm:text-base">{item.role}</h4>
+            <p className="text-xs text-indigo-600 dark:text-indigo-400 font-medium mb-1">{item.organization}</p>
+            <p className="text-gray-700 dark:text-gray-300 text-xs sm:text-sm leading-relaxed">{item.details}</p>
+          </div>
+        </div>
       ))}
-    </ul>
+    </div>
   </Section>
 );
 
-// Volunteer Experience Section Component
-const VolunteerExperience = ({ data }) => (
-  <Section id="volunteer-experience" title="Volunteer Experience">
-    <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-3">
-      {data.map((item, index) => (
-        <li key={index} className="flex items-start">
-          <Heart size={20} className="mr-3 text-indigo-500 flex-shrink-0" />
-          <span>{item}</span>
-        </li>
-      ))}
-    </ul>
+// Certifications & Coursework Section Component
+const CertificationsCoursework = ({ data }) => (
+  <Section id="certifications-coursework" title="Certifications & Coursework">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
+          <Award size={18} className="mr-2 text-indigo-500" /> Certifications
+        </h3>
+        <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+          {data.certifications.map((cert, index) => (
+            <li key={index} className="flex items-center">
+              <span className="text-indigo-500 mr-2">&bull;</span> {cert}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
+          <Code size={18} className="mr-2 text-indigo-500" /> Core Coursework
+        </h3>
+        <div className="flex flex-wrap gap-2">
+          {data.coursework.map((course, index) => (
+            <span key={index} className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs px-3 py-1.5 rounded-full border border-gray-200 dark:border-gray-600">
+              {course}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
   </Section>
 );
 
 // Footer Component
 const Footer = () => (
   <footer className="bg-gray-900 text-white py-8 px-4 sm:px-6 lg:px-8 text-center rounded-xl mt-8">
-    <p>&copy; {new Date().getFullYear()} SEGARI SAMUEL RICKSON. All rights reserved.</p>
-    <p className="text-sm mt-2">Built with React and Tailwind CSS</p>
+    <p className="text-sm sm:text-base">&copy; {new Date().getFullYear()} SEGARI SAMUEL RICKSON. All rights reserved.</p>
+    <p className="text-xs opacity-60 mt-2">Built with React and Tailwind CSS</p>
   </footer>
 );
 
@@ -261,14 +289,14 @@ const Footer = () => (
 const App = () => {
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white font-sans p-4 sm:p-6 lg:p-8">
-      <div className="container mx-auto max-w-4xl space-y-8">
+      <div className="container mx-auto max-w-4xl space-y-6">
         <Hero data={resumeData} />
         <Skills data={resumeData.technicalSkills} />
         <Experience data={resumeData.experience} />
         <Projects data={resumeData.projects} />
         <Education data={resumeData.education} />
-        <CertificationsAwards data={resumeData.certificationsAwards} />
-        <VolunteerExperience data={resumeData.volunteerExperience} />
+        <HonorsLeadership data={resumeData.honorsLeadership} />
+        <CertificationsCoursework data={resumeData.certificationsCoursework} />
         <Footer />
       </div>
     </div>
