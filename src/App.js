@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, Linkedin, Github, Briefcase, Code, GraduationCap, Award, Heart, Calendar, ExternalLink } from 'lucide-react';
+import { Mail, Phone, Linkedin, Github, Briefcase, Code, GraduationCap, Award, ExternalLink } from 'lucide-react';
 
 // Data strictly synchronized with your polished single-page resume
 const resumeData = {
