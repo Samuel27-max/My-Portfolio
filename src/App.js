@@ -4,7 +4,7 @@ import { Mail, Phone, Linkedin, Github, Briefcase, Code, GraduationCap, Award, E
 // Data strictly synchronized with your polished single-page resume
 const resumeData = {
   name: "SEGARI SAMUEL RICKSON",
-  email: "samuelrickson@gmail.com",
+  email: "segarisamuelrickson@gmail.com",
   phone: "+91 8096721945",
   linkedin: "https://www.linkedin.com/in/samuel-rickson-084874278",
   github: "https://github.com/Samuel27-max",
