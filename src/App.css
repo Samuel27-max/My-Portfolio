@@ -1,52 +1,46 @@
-/* Keep original template defaults */
-.App {
-  text-align: center;
+/* ==========================================================================
+   COMPLETE & PREMIUM PORTFOLIO STYLES (App.css)
+   ========================================================================== */
+
+/* 1. Base Setup & Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* 2. Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-track {
+  background: #0f172a;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar-thumb:hover {
+  background: #6366f1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Text Selection Glow */
+::selection {
+  background: #6366f1;
+  color: #ffffff;
 }
 
-/* ==========================================
-   NEW CUSTOM INTERACTIVE ANIMATIONS
-   ========================================== */
+/* ==========================================================================
+   ANIMATIONS & KEYFRAMES
+   ========================================================================== */
 
-/* 1. Smooth Fade-In Upwards */
+/* Fluid Fade-In & Upward Motion */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -54,11 +48,11 @@
   }
 }
 
-/* 2. Top-Down Drop */
+/* Header Drop-In */
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translateY(-24px);
+    transform: translateY(-30px);
   }
   to {
     opacity: 1;
@@ -66,8 +60,8 @@
   }
 }
 
-/* 3. Glowing Gradient Movement for Hero Banner */
-@keyframes gradientMove {
+/* Ultra-Smooth Mesh Gradient Animation for Hero Banner */
+@keyframes meshGradient {
   0% {
     background-position: 0% 50%;
   }
@@ -79,44 +73,112 @@
   }
 }
 
+/* Optional Logo Spin (Template Default) */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ==========================================================================
+   HERO & GLASSMORPHISM STYLES
+   ========================================================================== */
+
+/* Animated Hero Mesh Background */
 .animated-hero-gradient {
-  background-size: 200% 200%;
-  animation: gradientMove 10s ease infinite;
+  background: linear-gradient(
+    135deg,
+    #4f46e5 0%,
+    #7c3aed 30%,
+    #c026d3 70%,
+    #2563eb 100%
+  );
+  background-size: 300% 300%;
+  animation: meshGradient 12s ease infinite;
+  box-shadow: 0 20px 40px -15px rgba(79, 70, 229, 0.4);
 }
 
-/* 4. Interactive Card Zoom & Subtle Glow on Hover */
+/* Premium Card Base with Glassmorphism Support */
 .hover-card-trigger {
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
-              box-shadow 0.3s ease, 
-              border-color 0.3s ease,
-              background-color 0.3s ease;
+  position: relative;
+  isolation: isolate;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 0.5rem;
 }
 
+/* Dark Mode Glassmorphism Card Override */
+.dark .hover-card-trigger {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(12px);
+}
+
+/* High-End Hover Elevation Effect */
 .hover-card-trigger:hover {
-  transform: translateY(-5px) scale(1.01);
-  box-shadow: 0 12px 24px -6px rgba(99, 102, 241, 0.2), 0 4px 8px -4px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px) scale(1.012);
+  box-shadow: 
+    0 20px 30px -10px rgba(99, 102, 241, 0.2),
+    0 10px 15px -5px rgba(0, 0, 0, 0.04);
+  border-color: rgba(99, 102, 241, 0.4);
 }
 
-/* Dark mode specific subtle glow hover */
 .dark .hover-card-trigger:hover {
-  box-shadow: 0 12px 24px -6px rgba(129, 140, 248, 0.15), 0 4px 8px -4px rgba(0, 0, 0, 0.4);
+  box-shadow: 
+    0 20px 35px -10px rgba(129, 140, 248, 0.18),
+    0 10px 20px -5px rgba(0, 0, 0, 0.5);
+  border-color: rgba(129, 140, 248, 0.4);
 }
 
-/* 5. Active Animation Utility Classes */
+/* Subtle Light Sweep Overlay on Card Hover */
+.hover-card-trigger::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: none;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.hover-card-trigger:hover::before {
+  left: 150%;
+  transition: all 0.8s ease-in-out;
+}
+
+/* ==========================================================================
+   ANIMATION UTILITIES & DELAYS
+   ========================================================================== */
+
 .animate-fade-in-up {
-  animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .animate-fade-in-down {
-  animation: fadeInDown 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: fadeInDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* 6. Staggered Delays for Sequential Rendering */
+/* Staggered Loading Animations */
 .delay-100 { animation-delay: 100ms; }
 .delay-200 { animation-delay: 200ms; }
 .delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
 
-/* Smooth scrolling across the entire document */
-html {
-  scroll-behavior: smooth;
+/* Interactive Link Polish */
+a {
+  transition: color 0.2s ease, transform 0.2s ease;
 }
