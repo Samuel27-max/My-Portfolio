@@ -1,3 +1,4 @@
+import './App.css'; // <--- ADD THIS LINE AT THE TOP
 import React from 'react';
 import { Mail, Phone, Linkedin, Github, Briefcase, Code, GraduationCap, Award, ExternalLink } from 'lucide-react';
 
