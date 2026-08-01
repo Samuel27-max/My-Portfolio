@@ -2,22 +2,10 @@
    COMPLETE & PREMIUM PORTFOLIO STYLES (App.css)
    ========================================================================== */
 
-/* 1. Base Setup, Professional Background & Smooth Scrolling */
+/* 1. Base Setup & Smooth Scrolling */
 html {
   scroll-behavior: smooth;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-}
-
-body {
-  /* Rich, subtle slate-indigo dark backdrop with ambient radial glows */
-  background-color: #0f172a;
-  background-image: 
-    radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.12) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, rgba(168, 85, 247, 0.1) 0px, transparent 50%),
-    radial-gradient(at 50% 50%, rgba(30, 41, 59, 0.5) 0px, transparent 100%);
-  background-attachment: fixed;
-  color: #f8fafc;
-  min-height: 100vh;
 }
 
 /* 2. Custom Sleek Scrollbar */
@@ -85,8 +73,18 @@ body {
   }
 }
 
+/* Optional Logo Spin (Template Default) */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* ==========================================================================
-   HERO & GLASSMORPHISM CARD STYLES
+   HERO & GLASSMORPHISM STYLES
    ========================================================================== */
 
 /* Animated Hero Mesh Background */
@@ -108,17 +106,31 @@ body {
   position: relative;
   isolation: isolate;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 0.5rem;
+}
+
+/* Dark Mode Glassmorphism Card Override */
+.dark .hover-card-trigger {
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(30, 41, 59, 0.7);
   backdrop-filter: blur(12px);
-  border-radius: 0.75rem;
 }
 
 /* High-End Hover Elevation Effect */
 .hover-card-trigger:hover {
   transform: translateY(-6px) scale(1.012);
   box-shadow: 
-    0 20px 35px -10px rgba(129, 140, 248, 0.2),
+    0 20px 30px -10px rgba(99, 102, 241, 0.2),
+    0 10px 15px -5px rgba(0, 0, 0, 0.04);
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+.dark .hover-card-trigger:hover {
+  box-shadow: 
+    0 20px 35px -10px rgba(129, 140, 248, 0.18),
     0 10px 20px -5px rgba(0, 0, 0, 0.5);
   border-color: rgba(129, 140, 248, 0.4);
 }
@@ -134,7 +146,7 @@ body {
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.2),
     transparent
   );
   transform: skewX(-25deg);
