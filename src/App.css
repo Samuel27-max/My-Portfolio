@@ -1,4 +1,4 @@
-/* Keep your original template defaults */
+/* Keep original template defaults */
 .App {
   text-align: center;
 }
@@ -39,14 +39,14 @@
 }
 
 /* ==========================================
-   NEW CUSTOM ANIMATIONS FOR YOUR PORTFOLIO
+   NEW CUSTOM INTERACTIVE ANIMATIONS
    ========================================== */
 
-/* 1. Smooth Fade-In Upwards (Perfect for Section Cards) */
+/* 1. Smooth Fade-In Upwards */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(24px);
   }
   to {
     opacity: 1;
@@ -54,11 +54,11 @@
   }
 }
 
-/* 2. Top-Down Drop (Great for Title Headers) */
+/* 2. Top-Down Drop */
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-24px);
   }
   to {
     opacity: 1;
@@ -66,38 +66,57 @@
   }
 }
 
-/* 3. Subtle Card Zoom on Hover (For Projects and Experiences) */
+/* 3. Glowing Gradient Movement for Hero Banner */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-hero-gradient {
+  background-size: 200% 200%;
+  animation: gradientMove 10s ease infinite;
+}
+
+/* 4. Interactive Card Zoom & Subtle Glow on Hover */
 .hover-card-trigger {
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.3s ease, 
+              border-color 0.3s ease,
+              background-color 0.3s ease;
 }
 
 .hover-card-trigger:hover {
-  transform: translateY(-4px) scale(1.015);
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 12px 24px -6px rgba(99, 102, 241, 0.2), 0 4px 8px -4px rgba(0, 0, 0, 0.1);
 }
 
-/* 4. Active Animation Utility Classes */
+/* Dark mode specific subtle glow hover */
+.dark .hover-card-trigger:hover {
+  box-shadow: 0 12px 24px -6px rgba(129, 140, 248, 0.15), 0 4px 8px -4px rgba(0, 0, 0, 0.4);
+}
+
+/* 5. Active Animation Utility Classes */
 .animate-fade-in-up {
-  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .animate-fade-in-down {
   animation: fadeInDown 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-/* 5. Staggered Delays so sections load sequentially */
+/* 6. Staggered Delays for Sequential Rendering */
 .delay-100 { animation-delay: 100ms; }
 .delay-200 { animation-delay: 200ms; }
 .delay-300 { animation-delay: 300ms; }
 
-/* 6. Glowing background accent helper for the Hero Banner */
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.animated-hero-gradient {
-  background-size: 200% 200%;
-  animation: gradientMove 8s ease infinite;
+/* Smooth scrolling across the entire document */
+html {
+  scroll-behavior: smooth;
 }
